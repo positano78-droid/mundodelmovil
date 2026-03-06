@@ -3,28 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mundo del Móvil - IA</title>
+    <title>Whanga Media - Demo Mundo del Móvil</title>
     <style>
-        body { background: #0D1117; color: white; font-family: sans-serif; text-align: center; padding: 50px 20px; }
-        .container { background: #161b22; border: 2px solid #238636; padding: 30px; border-radius: 20px; max-width: 400px; margin: 0 auto; }
-        .money { color: #238636; font-size: 1.8rem; font-weight: bold; display: block; margin: 15px 0; }
-        .stats { background: #0d1117; padding: 10px; border-radius: 10px; margin: 20px 0; border: 1px solid #30363d; }
-        .btn { display: block; background: #238636; color: white; padding: 15px; border-radius: 10px; text-decoration: none; font-weight: bold; margin-top: 20px; }
+        :root {
+            --primary-green: #238636;
+            --bg-dark: #0D1117;
+            --card-bg: #161b22;
+            --border-color: #30363d;
+            --text-main: #ffffff;
+            --text-secondary: #8b949e;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .presentation-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            max-width: 450px;
+            width: 100%;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .logo-container {
+            margin-bottom: 20px;
+        }
+
+        h1 { font-size: 1.8rem; margin-bottom: 5px; }
+        .subtitle { color: var(--text-secondary); margin-bottom: 30px; font-size: 1rem; }
+
+        .slide-content {
+            border-top: 1px solid var(--border-color);
+            margin-top: 20px;
+            padding-top: 25px;
+        }
+
+        .stat-highlight {
+            color: var(--primary-green);
+            font-size: 2.2rem;
+            font-weight: bold;
+            display: block;
+            margin: 15px 0;
+        }
+
+        .impact-box {
+            background-color: var(--bg-dark);
+            border: 2px solid var(--primary-green);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 25px 0;
+        }
+
+        .money-text {
+            color: var(--primary-green);
+            font-size: 1.6rem;
+            font-weight: bold;
+        }
+
+        .btn-whatsapp {
+            display: inline-block;
+            background-color: var(--primary-green);
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-top: 10px;
+            transition: transform 0.2s;
+        }
+
+        .btn-whatsapp:hover { transform: scale(1.05); }
+
+        .footer-note {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            margin-top: 25px;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Mundo del Móvil</h1>
-        <p>Asistente IA de Whanga Media</p>
-        <div class="stats">
-            <p>Atención 24/7</p>
-            <strong style="color:#238636; font-size: 1.4rem;">↑ 200% Citas/mes</strong>
-            <p>(De 12 a 36 citas reales)</p>
+
+    <div class="presentation-card">
+        <div class="logo-container">
+            <h1>Mundo del Móvil</h1>
+            <p class="subtitle">Potenciado por Whanga Media</p>
         </div>
-        <p>Impacto económico estimado:</p>
-        <span class="money">+1.900€ / mes</span>
-        <a href="https://wa.me/34660323721" class="btn">PROBAR DEMO WHATSAPP</a>
+
+        <div class="slide-content">
+            <p>Atención IA 24/7 en WhatsApp</p>
+            <span class="stat-highlight">↑ 100% Facturación</span>
+            <p>Pasando de 12 a 24 citas agendadas al mes</p>
+            
+            <div class="impact-box">
+                <p style="margin: 0; color: var(--text-secondary);">Impacto mensual neto:</p>
+                <span class="money-text">+1.500€ / mes extra</span>
+            </div>
+
+            <a href="https://wa.me/34660323721" class="btn-whatsapp">PROBAR DEMO REAL</a>
+        </div>
+
+        <p class="footer-note">Libera 40 horas al mes de tu equipo [cite: 19]</p>
     </div>
+
 </body>
 </html>
 
